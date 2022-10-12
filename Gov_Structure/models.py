@@ -1,4 +1,4 @@
-from tkinter import CASCADE
+
 from django.db import models
 from Admin_Structure.models import *
 from django.contrib.postgres.fields import ArrayField
