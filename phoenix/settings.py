@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-b8w*8_#s@xq(wvi-tniqw6y97$)1z*yvp@zlem2ij8*cxw4x3(
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-#CSRF_TRUSTED_ORIGINS = ['https://phoenix-backend-production.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://phoenix-backend-production.up.railway.app']
 
 
 # Application definition
@@ -43,10 +43,10 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
