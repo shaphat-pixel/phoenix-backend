@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn Gamkrib.wsgi --log-file -
+web: gunicorn phoenix.wsgi --log-file -
