@@ -15,7 +15,7 @@ class Demographics(models.Model):
     death_rate = models.CharField(null=True, default="", max_length=300)
 
     def __str__(self):
-        return f'{self.region}'
+        return f'{self.name_of_region}'
 
 class Regions(models.Model):
     region_name = models.CharField(null=True, default="", max_length=300)

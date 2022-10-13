@@ -64,7 +64,7 @@ class Party_Executives(models.Model):
 
 class Polling_Stations(models.Model):
     polling_region = models.ForeignKey(Regions, on_delete=models.CASCADE)
-    elctoral_area = models.ForeignKey(Electoral_Area, on_delete=models.CASCADE)
+    electoral_area = models.ForeignKey(Electoral_Area, on_delete=models.CASCADE)
     polling_const = models.ForeignKey(Constituencies, on_delete=models.CASCADE)
     polling_name = models.CharField(blank=True, null=True, max_length=300, default="")
 
