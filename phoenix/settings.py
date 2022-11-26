@@ -81,11 +81,19 @@ WSGI_APPLICATION = 'phoenix.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+<<<<<<< HEAD
         'NAME': 'tdcgh_phoenix',
         'USER': 'tdcgh_admin',
         'PASSWORD': 'Ph03n1#',
         'HOST': 'phoenix.tdcgh.com',
         'PORT': '5432',
+=======
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'pSBFzXRqeUhoFr5ogC3K',
+        'HOST': 'containers-us-west-111.railway.app',
+        'PORT': '8064',
+>>>>>>> f18c344 (initial commit)
     }
 }
 
